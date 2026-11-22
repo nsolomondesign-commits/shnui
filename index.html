@@ -6,5 +6,19 @@
     <meta name="theme-color" content="#f5f7fa" />
     <title>PlanDiff | השוואת תכניות</title>
   </head>
-  <body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body>
+  <body>
+    <div id="root"></div>
+    <main id="local-help" hidden>
+      <h1>הפעלת PlanDiff</h1>
+      <p>כדי להשתמש באפליקציה, יש להפעיל אותה בתיקייה שחילצתם מה־ZIP.</p>
+      <p>פתחו טרמינל בתיקייה והפעילו <code dir="ltr">py -3.12 start.py</code> ב־Windows
+        או <code dir="ltr">python3.12 start.py</code> ב־macOS או Linux.</p>
+      <p>אחרי שהשרת עולה, פתחו <a href="http://127.0.0.1:5180">http://127.0.0.1:5180</a>.</p>
+      <p>נדרשים Python 3.12 ו־Node.js 22 ומעלה. <a href="./README.md">הוראות מלאות</a></p>
+    </main>
+    <script>
+      if (location.protocol === 'file:') document.getElementById('local-help').hidden = false
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
