@@ -1,0 +1,6 @@
+fastapi==0.165.0
+uvicorn==0.34.2
+python-multipart==0.0.34
+pypdfium2==5.15.2
+opencv-python-headless==4.11.0.86
+numpy==2.2.6
